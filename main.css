@@ -4,3 +4,48 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.create-todo {
+    margin-top: 1rem;
+}
+.enter-todo{
+    border: none;
+}
+
+.enter-todo:focus{
+    outline: none;
+}
+
+.button {
+    background-color: grey;
+    color: white;
+
+}
+
+.button:hover {
+    background-color: black;
+    cursor: pointer;
+    border: #fff 2px solid;
+    transition: 0.5s ease-in;
+}
+.button:active {
+    background-color: aquamarine;
+    color: black;
+}
+
+.todo-list{
+    margin-top: 1rem;
+}

@@ -18,14 +18,16 @@
 		
 		<section class="create-todo">
 			<h3>CREATE A TODO</h3>
+			<br>
 			<form id="new-todo-form">
 				<h4>What's on your todo?</h4>
 				<input 
-					type="text" 
+					type="text"
+					class="enter-todo" 
 					placeholder="e.g. Get some milk"
-					name="content"
-					id="content" />
-				<input type="submit" value="Add todo" />
+					name="todocontent"
+					id="todocontent" />
+				<input class="button" type="submit" value="Add todo" id="add" />
 			</form>
 		</section>
 		
@@ -37,8 +39,8 @@
                 <div class="todo">
                     <input type="checkbox" id="toggle">
                     Buy milk
-                    <button>Edit Todo</button>
-                    <button>Delete Todo</button>
+                    <button class="button" id="edit">Edit Todo</button>
+                    <button class="button" id="delete">Delete Todo</button>
                 </div>
             </div>
 		</section>
