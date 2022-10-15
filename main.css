@@ -48,4 +48,12 @@ header {
 
 .todo-list{
     margin-top: 1rem;
+    width: 80vw;
+}
+.todo {
+    background-color: bisque;
+    
+    display: flex;
+    justify-content: space-around;
+    
 }
