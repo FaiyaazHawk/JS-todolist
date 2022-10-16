@@ -52,11 +52,19 @@ header {
 }
 .todo {
     background-color: bisque;
-    
+    margin: 5px;
+    border: #333 2px solid;
+    border-radius: 5px;
     display: flex;
     justify-content: space-around;
     
 }
+#toggle {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .checked {
     text-decoration: line-through;
+    background-color: rgb(60, 219, 81);
 }

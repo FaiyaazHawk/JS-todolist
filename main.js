@@ -29,6 +29,7 @@ function rendertodos(list) {
         checkbox.type = 'checkbox'
         checkbox.id = 'toggle'
         todocase.appendChild(checkbox)
+        //checkbox toggling
         checkbox.addEventListener("change", (e) => {
             if(e.target.checked) {
                 todocase.classList.add('checked')
