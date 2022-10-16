@@ -9,7 +9,7 @@ addbutton.addEventListener('click', (e) => {
     const content = document.getElementById("todocontent").value;
     todos.push(content);
     rendertodos(todos) 
-    content.value = ""   
+    content.value = '';
 })
 
 
@@ -29,6 +29,13 @@ function rendertodos(list) {
         checkbox.type = 'checkbox'
         checkbox.id = 'toggle'
         todocase.appendChild(checkbox)
+        checkbox.addEventListener("change", (e) => {
+            if(e.target.checked) {
+                todocase.classList.add('checked')
+            } else {
+                todocase.classList.remove('checked')
+            }
+        })
 
         
 
