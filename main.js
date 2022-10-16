@@ -45,7 +45,7 @@ function rendertodos(list) {
         editButton.innerText = "Edit Todo"
         editButton.id = 'edit';
         todocase.appendChild(editButton);
-        editButton.addEventListener('click', () => {toggleEdit()})
+        editButton.addEventListener('click', () => {toggleEdit(todo)})
 
         const deleteButton = document.createElement('button')
         deleteButton.classList.add('button')
@@ -58,9 +58,13 @@ function rendertodos(list) {
     });
 }
 
-function toggleEdit() {
-    console.log('editing')    
-    
+function toggleEdit(todo) {
+    const todoindex = todos.indexOf(todo)   
+    todos = todos.filter(word => word !== todo)
+    const retodo = prompt("Edit here")
+    //inserting item inplace into array
+    todos.splice(todoindex, 0, retodo);
+    rendertodos(todos)
 }
 
 function deleteTodo(todo) {
